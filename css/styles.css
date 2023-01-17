@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+
+:root {
+	--main-color: #fff;
+	--btn-bg: #4985ff;
+	--h2-color: #323232;
+	--h3-color: #000;
+	--p-color: #999999;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Montserrat", sans-serif;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	display: block;
+}
+
+img {
+	display: block;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	display: block;
+}
+
+.container {
+	max-width: 1113px;
+	margin: 0 auto;
+}
+
+body {
+	position: relative;
+}
+
+/* ---------- Header ----------- */
+
+.header {
+	border-bottom: 1px solid #a1a1a1;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+}
+
+.nav-menu {
+	display: flex;
+	column-gap: 40px;
+	justify-content: flex-end;
+	padding: 40px 0 39px;
+}
+
+.nav-item {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.25;
+	color: var(--main-color);
+	position: relative;
+}
+
+.current::after {
+	content: "";
+	position: absolute;
+	width: calc(100% + 37px);
+	height: 2px;
+	background-color: var(--main-color);
+	bottom: -40px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 2px 2px 0 0;
+}
+
+/* ---------- Header ----------- */
+
+/* ---------- Promo ----------- */
+
+.promo {
+	padding: 319px 0 335px;
+	background-image: url(../images/promo/promo_bg.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.promo-subtitle {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.25;
+	text-align: center;
+	color: var(--main-color);
+}
+
+.promo-title {
+	font-weight: 800;
+	font-size: 48px;
+	line-height: 1.333;
+	text-align: center;
+	color: var(--main-color);
+	margin: 20px 0 50px;
+}
+
+.main-btn {
+	background-color: var(--btn-bg);
+	box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+	border-radius: 30px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.25;
+	text-align: center;
+	color: var(--main-color);
+	padding: 13px 36px 15px;
+	margin: 0 auto;
+}
+
+/* ---------- Promo ----------- */
+
+/* ---------- Apps ----------- */
+
+.apps {
+	padding: 110px 0 105px;
+}
+
+.apps-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.472;
+	text-align: center;
+	color: var(--h2-color);
+	max-width: 739px;
+	margin: 0 auto 32px;
+}
+
+.apps-descr {
+	font-size: 16px;
+	line-height: 1.5625;
+	text-align: center;
+	color: var(--p-color);
+	max-width: 730px;
+	margin: 0 auto;
+}
+
+.apps-list {
+	display: flex;
+	column-gap: 27px;
+	margin: 70px 0 55px;
+}
+
+.apps-item {
+	display: flex;
+	column-gap: 17px;
+}
+
+.apps-img {
+	padding: 10px;
+	border: 1px solid #e0e0e0;
+	border-radius: 100%;
+}
+
+.apps-subtitle {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.22;
+	color: var(--h3-color);
+	margin: 43px 0 12px;
+}
+
+.apps-text {
+	font-size: 14px;
+	line-height: 1.57;
+	color: var(--p-color);
+}
